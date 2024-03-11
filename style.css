@@ -44,6 +44,7 @@ body{
     width: 60px;
     height: 60px;
     cursor: pointer;
+    
 }
 .search button img{
     width: 16px;
@@ -90,4 +91,36 @@ body{
     font-size: 14px;
     margin-top: 10px;
     display: none;
+}
+
+@media (max-width:600px) {
+    .card {
+        width: 90%;
+        max-width: 320px;
+        transition: 0.4s;
+    }
+    .search input{
+        font-size: 15px;
+        height: 40px;
+        padding: 5px 10px;
+        margin-right: 5px;
+        width: 80%;
+    }
+    .search button{
+        width: 42px;
+        height: 42px;
+    }
+    .search button img{
+       width: 13px;
+    }
+    .details{
+        display: flex;
+        flex-direction: column;
+    }
+    .col{
+        margin-bottom: 20px;
+    }
+    .humidity , .wind{
+        font-size: 15px;
+    }
 }
